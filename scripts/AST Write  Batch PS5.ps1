@@ -1,4 +1,4 @@
-﻿##Functions
+##Functions
 ###########
 function Join-String {
     [CmdletBinding()]
@@ -32,6 +32,18 @@ function Join-String {
         return $result
     }
 }
+
+#WARNING MESSAGE
+#############################
+Write-Host "WARNING BY DEFAULT THIS SCRIPT WILL SEND A SIMULATION TO ALL USERS, PLEASE EDIT AND DO NOT RUN IN PRODUCTION ENVIRONEMTS AS IS" -ForegroundColor Red
+Write-Host "Please enter YES to continue" -ForegroundColor Yellow
+$confirmation = Read-Host "Continue? [YES/NO]"
+while($confirmation -ne "YES")
+{
+    if ($confirmation -eq 'NO') {exit}
+    $confirmation = Read-Host "Continue? [YES/NO]"
+}
+
 
 #Define Client Variables Here
 #############################
