@@ -16,18 +16,19 @@ You will need to register an Azure App in your tenant, graning Attacksim Admin, 
 The batch script as is, will send a simulation to **ALL** users in your environment unless you edit the target scope.
 
 ### AST Write  Batch PS5
-Auths against our api app registration.
-Gets all global payloads that are of type cred harvest.
-Gets all users from AD and randomizes list.
-Splits users into chunks (configurable)
-Grabs a random payload, removes from pool
-Sends simulations in chunks based on split
+Auths against our api app registration.  
+Gets all global payloads that are of type cred harvest.  
+Gets all users from AD and randomizes list.  
+Splits users into chunks (configurable),  
+Grabs a random payload, removes from pool.  
+Sends simulations in chunks based on split.  
 
 ### AST Write Hunting PS5
-Auths against our api app registration.
-Gets all global payloads that are of type cred harvest.
-Gets top targeted users for phish from advanced hunting.
-Sends simulation to top targeted users.
+Auths against our api app registration.  
+Gets all global payloads that are of type cred harvest.  
+Gets top targeted users for phish from advanced hunting.  
+Sends simulation to top targeted users.  
+
 
 
 
